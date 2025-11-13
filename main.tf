@@ -16,7 +16,7 @@ resource "aws_lb_target_group" "main" {
 }
 
 resource "aws_instance" "main" {
-  ami           = local.ami_id
+  ami           =  var.ami_id #local.ami_id
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.sg_id]
   subnet_id = local.private_subnet_id
