@@ -18,7 +18,7 @@ data "aws_ssm_parameter" "frontend_alb_listener_arn" {
   name = "/${var.project}/${var.environment}/frontend_alb_listener_arn"
 }
 
-data "aws_ami" "joindevops" {
+/* data "aws_ami" "joindevops" {
   owners           = ["898080060887"] #["973714476881"]
   most_recent      = true
 
@@ -36,4 +36,4 @@ data "aws_ami" "joindevops" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-}
+} */
